@@ -1,6 +1,24 @@
+@import "../styles/vars.scss";
+
 .main {
-  background-color: white;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .container {
+    @extend %page-container;
+    grid-template-areas: 'sidebar sidebar sidebar sidebar content content content content content content content content';
+    height: 100%;
+
+    background-color: white;
+    margin: 6.563rem 15.625rem 6.563rem 15.625rem;
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content {
+      grid-area: content;
+    }
+  }
 }
 

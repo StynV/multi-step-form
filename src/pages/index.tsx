@@ -1,13 +1,31 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import styles from '@/styles/Home.module.scss'
 import Meta from '@/components/Meta/Meta'
+import styles from '@/styles/Home.module.scss'
 
 const Home = () => (
   <>
     <Meta />
       
     <main className={styles.main}>
-      <p>multi step form</p>
+      <div className={styles.container}>
+        <div className={styles.sidebar}>
+          <ul>
+            <li>
+              <div>1</div>
+            </li>
+            <li>
+              <div>2</div>
+            </li>
+            <li>
+              <div>3</div>
+            </li>
+            <li>
+              <div>4</div>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.content}>content</div>
+      </div>
     </main>
   </>
 )
