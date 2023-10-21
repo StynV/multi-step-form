@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import styles from './sidebar.module.scss'
 import SidebarItem from './SidebarItem/SidebarItem'
+import styles from './sidebar.module.scss'
 
 const Sidebar = ({ className }: { className: string }) => {
     const { t } = useTranslation('common')

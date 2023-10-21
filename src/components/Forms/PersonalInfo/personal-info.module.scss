@@ -1,0 +1,31 @@
+.personalInfo {
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 1.5rem;
+
+        .inputWithLabel {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        
+            .input {
+                background-color: white;
+                border: 1px solid var(--Border-Color, #D6D9E6);
+                height: 2.5rem;
+                color: black;
+                padding-left: 16px;
+            }
+        }
+
+        .btn {
+            border-radius: 8px;
+            background: var(--Denim, #022959);
+            width: fit-content;
+            padding: 14px 24px;
+            font-size: 16px;
+            align-self: flex-end;
+        }
+    }
+}
