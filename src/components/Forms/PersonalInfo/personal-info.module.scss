@@ -10,6 +10,16 @@
             flex-direction: column;
             gap: 0.5rem;
         
+            .labelWithError {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                p {
+                    color: red;
+                }
+            }
+
             .input {
                 background-color: white;
                 border: 1px solid var(--Border-Color, #D6D9E6);

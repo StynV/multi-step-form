@@ -8,6 +8,7 @@ const Personalinfo = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
+    const [phoneError, setPhoneError] = useState('')
     
     const { t } = useTranslation('common')
 
@@ -16,7 +17,11 @@ const Personalinfo = () => {
     const onSubmit = (e: FormEvent) => {
         e.preventDefault()
 
-        dispatch(setPersonalInfo({ name, email, phone }))
+        if (phone === '') {
+            setPhoneError(t('home.content.phonenumberError'))
+        } else {
+            dispatch(setPersonalInfo({ name, email, phone }))
+        }
     }
 
     const handleInputChange = (setState: React.Dispatch<React.SetStateAction<string>>) => (e: ChangeEvent<HTMLInputElement>) => {
@@ -49,7 +54,10 @@ const Personalinfo = () => {
                 </div>
 
                 <div className={styles.inputWithLabel}>
-                    <label>{t('home.content.phonenumberLabel')}</label>
+                    <div className={styles.labelWithError}>
+                        <label>{t('home.content.phonenumberLabel')}</label>
+                        {phoneError && <p>{phoneError}</p>}
+                    </div>
                     <input
                         type="tel"
                         name="phone"

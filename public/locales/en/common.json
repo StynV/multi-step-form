@@ -19,6 +19,7 @@
       "emailPlaceholder": "e.g. stephenking@lorem.com",
       "phonenumberLabel": "Phone Number",
       "phonenumberPlaceholder": "e.g. +1 234 567 890",
+      "phonenumberError": "This field is required",
       "buttonLabel": "Next step"
     }
   }
