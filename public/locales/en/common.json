@@ -1,1 +1,12 @@
-{}
+{
+  "sidebar": {
+    "title1": "step 1",
+    "description1": "your info",
+    "title2": "step 2",
+    "description2": "select plan",
+    "title3": "step 3",
+    "description3": "add-ons",
+    "title4": "step 4",
+    "description4": "summary"
+  }
+}

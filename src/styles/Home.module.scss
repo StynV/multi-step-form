@@ -3,11 +3,12 @@
 .main {
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
 
   .container {
     @extend %page-container;
     grid-template-areas: 'sidebar sidebar sidebar sidebar content content content content content content content content';
-    height: 100%;
+    height: 33rem;
 
     background-color: white;
     margin: 6.563rem 15.625rem 6.563rem 15.625rem;

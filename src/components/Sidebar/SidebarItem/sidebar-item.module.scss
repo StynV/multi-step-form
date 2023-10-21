@@ -1,0 +1,48 @@
+.sidebaritem {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 31px;
+    
+    &:first-child {
+        margin-top: 2.5rem;
+    }
+
+    p {
+        color: white
+    }
+
+    .number {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        padding: 4px 10px 10px 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-weight: 700;
+
+        &.active {
+            color: var(--Denim, #022959);
+            background-color: #BEE2FD;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        p {
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 12px;
+        }
+
+        .description {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}
