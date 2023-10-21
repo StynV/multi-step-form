@@ -1,8 +1,11 @@
+$break-md: 768px;
 $break-lg: 1024px;
 $spacing-bace: .8rem;
 $font-size: 18px;
 
 %page-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  @media (min-width: $break-md) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 }

@@ -1,14 +1,36 @@
+@import "../../styles/vars.scss";
+
 .content {
     margin-top: 3.5rem;
     margin-left: auto;
     margin-right: auto;
 
+    @media (max-width: $break-md) {
+        margin-top: -3.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2rem 1.5rem;
+
+        background-color: white;
+        
+        border-radius: 10px;
+    }
+    
     .title {
         margin-bottom: 11px;
+
+        @media (max-width: $break-md) {
+            margin-bottom: 9px;
+            font-size: 24px;
+        }
     }
 
     .description {
         color: var(--Grey, #9699AA);
         margin-bottom: 2.188rem;
+        
+        @media (max-width: $break-md) {
+            margin-bottom: 1.375rem;
+        }
     }
 }

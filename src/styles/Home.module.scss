@@ -8,10 +8,19 @@
   .container {
     @extend %page-container;
     grid-template-areas: 'sidebar sidebar sidebar sidebar content content content content content content content content';
+
     height: 33rem;
 
     background-color: white;
-    margin: 6.563rem 15.625rem 6.563rem 15.625rem;
+
+    @media (min-width: $break-md) {
+      margin-top: 6.563rem;
+      width: 58.75rem;
+    }
+
+    @media (min-width: $break-lg) {
+      margin: 6.563rem auto 6.563rem auto;
+    }
 
     .sidebar {
       grid-area: sidebar;

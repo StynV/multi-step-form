@@ -1,12 +1,19 @@
+@import "../../../styles/vars.scss";
+
 .sidebaritem {
-    display: flex;
-    gap: 1rem;
-    margin-left: 2rem;
-    margin-bottom: 31px;
-    
-    &:first-child {
-        margin-top: 2.5rem;
+    @media (min-width: $break-md) {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 31px;
+        
+        &:first-child {
+            margin-top: 2.5rem;
+        }
     }
+    
+    flex-shrink: 1;
+    width: auto;
 
     p {
         color: white
