@@ -25,14 +25,17 @@ const RadioButtons = (
                     height={40}
                     className={styles.icon}
                 />
-                <p className={styles.title}>{t('plan.arcade.title')}</p>
-                {selectedDuration ?
-                    <p className={styles.price}>{t('plan.arcade.montlyPrice')}</p> :
-                    <>
-                        <p className={styles.price}>{t('plan.arcade.yearlyPrice')}</p>
-                        <p className={styles.free}>{t('plan.arcade.yearlyFree')}</p>
-                    </>
-                }
+
+                <div className={styles.text}>
+                    <p className={styles.title}>{t('plan.arcade.title')}</p>
+                    {selectedDuration ?
+                        <p className={styles.price}>{t('plan.arcade.montlyPrice')}</p> :
+                        <>
+                            <p className={styles.price}>{t('plan.arcade.yearlyPrice')}</p>
+                            <p className={styles.free}>{t('plan.arcade.yearlyFree')}</p>
+                        </>
+                    }
+                </div>
             </div>
 
             <div
@@ -46,14 +49,17 @@ const RadioButtons = (
                     height={40}
                     className={styles.icon}
                 />
-                <p className={styles.title}>{t('plan.advanced.title')}</p>
-                {selectedDuration ?
-                    <p className={styles.price}>{t('plan.advanced.montlyPrice')}</p> :
-                    <>
-                        <p className={styles.price}>{t('plan.advanced.yearlyPrice')}</p>
-                        <p className={styles.free}>{t('plan.advanced.yearlyFree')}</p>
-                    </>
-                }
+
+                <div className={styles.text}>
+                    <p className={styles.title}>{t('plan.advanced.title')}</p>
+                    {selectedDuration ?
+                        <p className={styles.price}>{t('plan.advanced.montlyPrice')}</p> :
+                        <>
+                            <p className={styles.price}>{t('plan.advanced.yearlyPrice')}</p>
+                            <p className={styles.free}>{t('plan.advanced.yearlyFree')}</p>
+                        </>
+                    }
+                </div>
             </div>
 
             <div
@@ -67,14 +73,17 @@ const RadioButtons = (
                     height={40}
                     className={styles.icon}
                 />
-                <p className={styles.title}>{t('plan.pro.title')}</p>
-                {selectedDuration ?
-                    <p className={styles.price}>{t('plan.pro.montlyPrice')}</p> :
-                    <>
-                        <p className={styles.price}>{t('plan.pro.yearlyPrice')}</p>
-                        <p className={styles.free}>{t('plan.pro.yearlyFree')}</p>
-                    </>
-                }
+                
+                <div className={styles.text}>
+                    <p className={styles.title}>{t('plan.pro.title')}</p>
+                    {selectedDuration ?
+                        <p className={styles.price}>{t('plan.pro.montlyPrice')}</p> :
+                        <>
+                            <p className={styles.price}>{t('plan.pro.yearlyPrice')}</p>
+                            <p className={styles.free}>{t('plan.pro.yearlyFree')}</p>
+                        </>
+                    }
+                </div>
             </div>
         </div>
     )
