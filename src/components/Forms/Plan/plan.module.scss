@@ -7,51 +7,6 @@
         justify-content: flex-end;
         gap: 1.5rem;
 
-        .radioButtons {
-            display: flex;
-            flex-direction: row;
-            gap: 1.125rem;
-
-            .customRadioButton {
-                height: 100%;
-                width: 100%;
-                border-radius: 8px;
-                border: 1px solid var(--Border-Color, #D6D9E6);
-                display: flex;
-                flex-direction: column;
-                padding-left: 1rem;
-                padding-bottom: 1.25rem;
-
-                &.selected {
-                    border: 1px solid var(--Purple, #483EFF);
-                    background: var(--Very-Light-Grey, #F8F9FF);
-                }
-
-                .icon {
-                    margin-top: 1.25rem;
-                    margin-bottom: 2.5rem;
-                }
-
-                .title {
-                    font-weight: 500;
-                }
-
-                .price {
-                    margin-top: 7px;
-                    color: var(--Grey, #9699AA);
-                    font-size: 14px;
-                    font-weight: 400;
-                }
-
-                .free {
-                    margin-top: 7px;
-                    color: var(--Denim, #022959);
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-            }
-        }
-
         .duration {
             display: flex;
             flex-direction: row;
@@ -76,67 +31,6 @@
 
             .selected {
                 font-weight: 700;
-            }
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-
-            input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-            
-            .slider {
-                position: absolute;
-                cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #ccc;
-                transition: .4s;
-
-                &:before {
-                    position: absolute;
-                    content: "";
-                    height: 26px;
-                    width: 26px;
-                    left: 4px;
-                    bottom: 4px;
-                    background-color: white;
-                    transition: .4s;
-                }
-
-                &.round {
-                    border-radius: 34px;
-
-                    &:before {
-                    border-radius: 50%;
-                    }
-                }
-            }
-
-            input {
-                &:checked {
-                    + .slider {
-                        background-color: #2196F3;
-
-                        &:before {
-                            transform: translateX(26px);
-                        }
-                    }
-                }
-
-                &:focus {
-                    + .slider {
-                        box-shadow: 0 0 1px #2196F3;
-                    }
-                }
             }
         }
 

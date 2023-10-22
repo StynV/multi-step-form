@@ -1,0 +1,46 @@
+.radioButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.125rem;
+
+    .customRadioButton {
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--Border-Color, #D6D9E6);
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-bottom: 1.25rem;
+        cursor: pointer;
+
+        &.selected {
+            border: 1px solid var(--Purple, #483EFF);
+            background: var(--Very-Light-Grey, #F8F9FF);
+            cursor:auto;
+        }
+
+        .icon {
+            margin-top: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .title {
+            font-weight: 500;
+        }
+
+        .price {
+            margin-top: 7px;
+            color: var(--Grey, #9699AA);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .free {
+            margin-top: 7px;
+            color: var(--Denim, #022959);
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
