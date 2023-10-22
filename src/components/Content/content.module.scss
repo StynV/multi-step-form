@@ -4,7 +4,10 @@
     margin-top: 3.5rem;
     margin-left: auto;
     margin-right: auto;
-    width: 28.125rem;
+    
+    @media (min-width: $break-md) {
+        width: 28.125rem;
+    }
 
     @media (max-width: $break-md) {
         margin-top: -3.5rem;

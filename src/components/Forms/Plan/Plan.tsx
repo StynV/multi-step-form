@@ -5,14 +5,17 @@ import { setPlan } from '@/state/slices/plan'
 import RadioButtons from './RadioButtons/RadioButtons'
 import styles from './plan.module.scss'
 import Toggle from './Toggle/Toggle'
+import { useRouter } from 'next/navigation'
 
 const PlanForm = () => {
-    const [selectedPlan, setSelectedPlan] = useState('')
+    const [selectedPlan, setSelectedPlan] = useState('arcade')
     const [selectedDuration, setSelectedDuration] = useState(true)
     
     const { t } = useTranslation('common')
 
     const dispatch = useDispatch()
+
+    const router = useRouter()
 
     const onSubmit = (e: FormEvent) => {
         e.preventDefault()
@@ -36,7 +39,10 @@ const PlanForm = () => {
                     <label className={`${!selectedDuration ? styles.selected : null}  ${styles.yearly}`}>{t('plan.yearly')}</label>
                 </div>
 
-                <button type="submit" className={styles.btn}>{t('home.buttonLabel')}</button>
+                <div className={styles.buttons}>
+                    <button className={styles.btnSecondary} onClick={() => {router.back()}}>{t('plan.goBackLabel')}</button>
+                    <button type="submit" className={styles.btn}>{t('plan.buttonLabel')}</button>
+                </div>
             </form>
         </div>
     )

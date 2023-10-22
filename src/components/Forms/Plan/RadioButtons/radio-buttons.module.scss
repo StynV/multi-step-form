@@ -20,6 +20,10 @@
             cursor:auto;
         }
 
+        &:hover {
+            border: 1px solid var(--Purple, #483EFF);
+        }
+
         .icon {
             margin-top: 1.25rem;
             margin-bottom: 2.5rem;

@@ -34,14 +34,31 @@
             }
         }
 
-        .btn {
-            border-radius: 8px;
-            background: var(--Denim, #022959);
-            width: fit-content;
-            padding: 14px 24px;
-            font-size: 16px;
-            align-self: flex-end;
-            cursor: pointer;
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btn {
+                border-radius: 8px;
+                background: var(--Denim, #022959);
+                width: fit-content;
+                padding: 14px 24px;
+                font-size: 16px;
+                align-self: flex-end;
+                cursor: pointer;
+            }
+
+            .btnSecondary {
+                background-color: white;
+                color: var(--Grey, #9699AA);
+                border: none;
+                width: fit-content;
+                font-family: 'Ubuntu';
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
         }
     }
 }
