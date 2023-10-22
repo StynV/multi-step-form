@@ -33,47 +33,45 @@ const Personalinfo = () => {
     }
 
     return (
-        <div className={styles.personalInfo}>
-            <form onSubmit={onSubmit} className={styles.form}>
-                <div className={styles.inputWithLabel}>
-                    <label>{t('home.textfieldLabel')}</label>
-                    <input
-                        type="text"
-                        name="name"
-                        className={styles.input}
-                        placeholder={t('home.textfieldPlaceholder')}
-                        onChange={handleInputChange(setName)}
-                    />
-                </div>
+        <form onSubmit={onSubmit} className={styles.form}>
+            <div className={styles.inputWithLabel}>
+                <label>{t('home.textfieldLabel')}</label>
+                <input
+                    type="text"
+                    name="name"
+                    className={styles.input}
+                    placeholder={t('home.textfieldPlaceholder')}
+                    onChange={handleInputChange(setName)}
+                />
+            </div>
 
-                <div className={styles.inputWithLabel}>
-                    <label>{t('home.emailLabel')}</label>
-                    <input
-                        type="email"
-                        name="email"
-                        className={styles.input}
-                        placeholder={t('home.emailPlaceholder')}
-                        onChange={handleInputChange(setEmail)}
-                    />
-                </div>
+            <div className={styles.inputWithLabel}>
+                <label>{t('home.emailLabel')}</label>
+                <input
+                    type="email"
+                    name="email"
+                    className={styles.input}
+                    placeholder={t('home.emailPlaceholder')}
+                    onChange={handleInputChange(setEmail)}
+                />
+            </div>
 
-                <div className={styles.inputWithLabel}>
-                    <div className={styles.labelWithError}>
-                        <label>{t('home.phonenumberLabel')}</label>
-                        {phoneError && <p>{phoneError}</p>}
-                    </div>
-                    <input
-                        type="tel"
-                        name="phone"
-                        className={styles.input}
-                        placeholder={t('home.phonenumberPlaceholder')}
-                        onChange={handleInputChange(setPhone)}
-                    />
+            <div className={styles.inputWithLabel}>
+                <div className={styles.labelWithError}>
+                    <label>{t('home.phonenumberLabel')}</label>
+                    {phoneError && <p>{phoneError}</p>}
                 </div>
+                <input
+                    type="tel"
+                    name="phone"
+                    className={styles.input}
+                    placeholder={t('home.phonenumberPlaceholder')}
+                    onChange={handleInputChange(setPhone)}
+                />
+            </div>
 
-                <button type="submit" className={styles.btn}>{t('home.buttonLabel')}</button>
-            </form>
-        </div>
+            <button type="submit" className={styles.btn}>{t('home.buttonLabel')}</button>
+        </form>
     )
 }
 

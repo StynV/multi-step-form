@@ -22,6 +22,7 @@ const PlanForm = () => {
 
         const duration = selectedDuration === true ? 'monthly' : 'yearly'
         dispatch(setPlan({ plan: selectedPlan, duration }))
+        router.push('add-ons')
     }
 
     const handleClick = (value: string) => {
@@ -29,22 +30,20 @@ const PlanForm = () => {
     }
 
     return (
-        <div className={styles.personalInfo}>
-            <form onSubmit={onSubmit} className={styles.form}>
-                <RadioButtons handleClick={handleClick} selectedPlan={selectedPlan} selectedDuration={selectedDuration} />
+        <form onSubmit={onSubmit} className={styles.form}>
+            <RadioButtons handleClick={handleClick} selectedPlan={selectedPlan} selectedDuration={selectedDuration} />
 
-                <div className={styles.duration}>
-                    <label className={`${selectedDuration ? styles.selected : null} ${styles.monthly}`}>{t('plan.monthly')}</label>
-                    <Toggle setSelectedDuration={setSelectedDuration} />
-                    <label className={`${!selectedDuration ? styles.selected : null}  ${styles.yearly}`}>{t('plan.yearly')}</label>
-                </div>
+            <div className={styles.duration}>
+                <label className={`${selectedDuration ? styles.selected : null} ${styles.monthly}`}>{t('plan.monthly')}</label>
+                <Toggle setSelectedDuration={setSelectedDuration} />
+                <label className={`${!selectedDuration ? styles.selected : null}  ${styles.yearly}`}>{t('plan.yearly')}</label>
+            </div>
 
-                <div className={styles.buttons}>
-                    <button className={styles.btnSecondary} onClick={() => {router.back()}}>{t('plan.goBackLabel')}</button>
-                    <button type="submit" className={styles.btn}>{t('plan.buttonLabel')}</button>
-                </div>
-            </form>
-        </div>
+            <div className={styles.buttons}>
+                <button className={styles.btnSecondary} onClick={() => {router.back()}}>{t('plan.goBackLabel')}</button>
+                <button type="submit" className={styles.btn}>{t('plan.buttonLabel')}</button>
+            </div>
+        </form>
     )
 }
 

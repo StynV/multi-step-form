@@ -1,48 +1,46 @@
 @import "../../../styles/vars.scss";
 
-.personalInfo {
-    .form {
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.5rem;
+
+    .inputWithLabel {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        gap: 1.5rem;
+        gap: 0.5rem;
 
-        .inputWithLabel {
+        @media (max-width: $break-md) {
+            font-size: 12px;
+        }
+    
+        .labelWithError {
             display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            flex-direction: row;
+            justify-content: space-between;
 
-            @media (max-width: $break-md) {
-                font-size: 12px;
-            }
-        
-            .labelWithError {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                p {
-                    color: red;
-                }
-            }
-
-            .input {
-                background-color: white;
-                border: 1px solid var(--Border-Color, #D6D9E6);
-                height: 2.5rem;
-                color: black;
-                padding-left: 16px;
+            p {
+                color: red;
             }
         }
 
-        .btn {
-            border-radius: 8px;
-            background: var(--Denim, #022959);
-            width: fit-content;
-            padding: 14px 24px;
-            font-size: 16px;
-            align-self: flex-end;
-            cursor: pointer;
+        .input {
+            background-color: white;
+            border: 1px solid var(--Border-Color, #D6D9E6);
+            height: 2.5rem;
+            color: black;
+            padding-left: 16px;
         }
+    }
+
+    .btn {
+        border-radius: 8px;
+        background: var(--Denim, #022959);
+        width: fit-content;
+        padding: 14px 24px;
+        font-size: 16px;
+        align-self: flex-end;
+        cursor: pointer;
     }
 }

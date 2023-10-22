@@ -1,35 +1,35 @@
-@import "../../../styles/vars.scss";
-
 .form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 1rem;
 
-    .duration {
+    .option {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-
-        width: 100%;
-        height: 3rem;
+        
+        border: 1px solid var(--Border-Color, #D6D9E6);
         border-radius: 8px;
-        background: var(--Very-Light-Grey, #F8F9FF);
 
-        font-size: 14px;
+        padding-top: 1.125rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.125rem;
 
-        .monthly {
-            width: 56px;
+        cursor: pointer;
+
+        &.selected {
+            border: 1px solid var(--Purple, #483EFF);
+            background: var(--Very-Light-Grey, #F8F9FF);
         }
 
-        .yearly {
-            width: 42px;
+        .checkbox {
+            margin-right: 0.75rem;
         }
 
-        .selected {
-            font-weight: 700;
+        .text {
+            flex-grow: 1;
+        }
+
+        .price {
+            margin-right: 1.5rem;
         }
     }
 

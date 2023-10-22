@@ -4,10 +4,10 @@ import Sidebar from '@/components/Sidebar/Sidebar'
 import Content from '@/components/Content/Content'
 import { useTranslation } from 'next-i18next'
 import Layout from '@/components/Layout/Layout'
-import PlanForm from '@/components/Forms/Plan/Plan'
 import styles from '../../components/Layout/layout.module.scss'
+import AddonsForm from '@/components/Forms/Addons/Addons'
 
-const Plan = () => {
+const Addons = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -18,10 +18,10 @@ const Plan = () => {
           <Sidebar className={styles.sidebar} />
           <Content
             className={styles.content}
-            title={t('plan.title')}
-            description={t('plan.description')}
+            title={t('addOns.title')}
+            description={t('addOns.description')}
         >
-          <PlanForm />
+          <AddonsForm />
         </Content>
       </Layout>
     </>
@@ -38,4 +38,4 @@ export async function getStaticProps({ locale }: { locale: string }) {
     }
 }
 
-export default Plan
+export default Addons
