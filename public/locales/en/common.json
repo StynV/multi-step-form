@@ -10,17 +10,41 @@
     "description4": "summary"
   },
   "home": {
-    "content": {
-      "title": "Personal info",
-      "description": "Please provide your name, email address, and phone number.",
-      "textfieldLabel": "Name",
-      "textfieldPlaceholder": "e.g. Stephen King",
-      "emailLabel": "Email Address",
-      "emailPlaceholder": "e.g. stephenking@lorem.com",
-      "phonenumberLabel": "Phone Number",
-      "phonenumberPlaceholder": "e.g. +1 234 567 890",
-      "phonenumberError": "This field is required",
-      "buttonLabel": "Next step"
-    }
+    "title": "Personal info",
+    "description": "Please provide your name, email address, and phone number.",
+    "textfieldLabel": "Name",
+    "textfieldPlaceholder": "e.g. Stephen King",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "e.g. stephenking@lorem.com",
+    "phonenumberLabel": "Phone Number",
+    "phonenumberPlaceholder": "e.g. +1 234 567 890",
+    "phonenumberError": "This field is required",
+    "buttonLabel": "Next step"
+  },
+  "plan": {
+    "title": "Select your plan",
+    "description": "You have the option of monthly or yearly billing.",
+    "arcade": {
+      "title": "Arcade",
+      "montlyPrice": "$9/mo",
+      "yearlyPrice": "$90/yr",
+      "yearlyFree": "2 months free"
+    },
+    "advanced": {
+      "title": "Advanced",
+      "montlyPrice": "$12/mo",
+      "yearlyPrice": "$120/yr",
+      "yearlyFree": "2 months free"
+    },
+    "pro": {
+      "title": "Pro",
+      "montlyPrice": "$15/mo",
+      "yearlyPrice": "$150/yr",
+      "yearlyFree": "2 months free"
+    },
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "goBackLabel": "Go Back",
+    "buttonLabel": "Next step"
   }
 }
