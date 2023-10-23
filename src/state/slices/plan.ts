@@ -1,9 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Plan } from '../models/Plan.model'
+import { Duration, Plan, PlanEnum } from '../models/Plan.model'
 
 const initialState: Plan = {
-    plan: '',
-    duration: '',
+    plan: PlanEnum.ARCADE,
+    duration: Duration.MONTHLY,
 }
 
 export const planSlice = createSlice({
