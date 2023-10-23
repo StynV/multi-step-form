@@ -1,6 +1,8 @@
+import { setAddOns } from '@/state/slices/addOns'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { FormEvent, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import styles from './add-ons.module.scss'
 
 const AddonsForm = () => {
@@ -12,11 +14,13 @@ const AddonsForm = () => {
 
     const router = useRouter()
 
+    const dispatch = useDispatch()
+
     const onSubmit = (e: FormEvent) => {
         e.preventDefault()
 
-        // dispatch(setPersonalInfo({ name, email, phone }))
-        // router.push('plan')
+        dispatch(setAddOns({ onlineService, largerStorage, customizableProfile }))
+        router.push('summary')
     }
 
     return (

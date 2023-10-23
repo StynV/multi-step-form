@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Plan } from '../models/Plan'
+import { Plan } from '../models/Plan.model'
 
 const initialState: Plan = {
     plan: '',
