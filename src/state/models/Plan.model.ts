@@ -1,4 +1,15 @@
 export interface Plan {
-    plan: string;
-    duration: string;
+    plan: PlanEnum;
+    duration: Duration;
+}
+
+export enum PlanEnum {
+    ARCADE = 'arcade',
+    ADVANCED = 'advanced',
+    PRO = 'pro'
+}
+
+export enum Duration {
+    MONTHLY = 'monthly',
+    YEARLY = 'yearly'
 }

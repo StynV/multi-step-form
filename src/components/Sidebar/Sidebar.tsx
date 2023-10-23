@@ -19,7 +19,7 @@ const Sidebar = ({ className }: { className: string }) => {
             case '/add-ons': {
                 return 3
             }
-            case '/finish': {
+            case '/summary': {
                 return 4
             }
             default: {

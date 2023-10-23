@@ -1,0 +1,19 @@
+.addOn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 1rem;
+    
+    .title {
+        color: var(--Grey, #9699AA);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .price {
+        color: var(--Denim, #022959);
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

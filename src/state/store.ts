@@ -2,11 +2,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import personalInfoReducer from './slices/personalInfo'
 import planReducer from './slices/plan'
+import addOnsReducer from './slices/addOns'
 
 export const store = configureStore({
     reducer: {
         personalInfo: personalInfoReducer,
-        plan: planReducer
+        plan: planReducer,
+        addOns: addOnsReducer
     },
 })
 

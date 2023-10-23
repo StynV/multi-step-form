@@ -26,19 +26,19 @@
     "description": "You have the option of monthly or yearly billing.",
     "arcade": {
       "title": "Arcade",
-      "montlyPrice": "$9/mo",
+      "monthlyPrice": "$9/mo",
       "yearlyPrice": "$90/yr",
       "yearlyFree": "2 months free"
     },
     "advanced": {
       "title": "Advanced",
-      "montlyPrice": "$12/mo",
+      "monthlyPrice": "$12/mo",
       "yearlyPrice": "$120/yr",
       "yearlyFree": "2 months free"
     },
     "pro": {
       "title": "Pro",
-      "montlyPrice": "$15/mo",
+      "monthlyPrice": "$15/mo",
       "yearlyPrice": "$150/yr",
       "yearlyFree": "2 months free"
     },
@@ -65,6 +65,43 @@
       "description": "Custom theme on your profile",
       "price": "+$2/mo"
     },
+    "goBackLabel": "Go Back",
+    "buttonLabel": "Next step"
+  },
+  "summary": {
+    "title": "Finishing up",
+    "description": "Double-check everything looks OK before confirming.",
+    "monthly": {
+      "arcade": {
+        "title": "Arcade (Monthly)",
+        "price": "$9/mo"
+      },
+      "advanced": {
+        "title": "Advanced (Monthly)",
+        "price": "$12/mo"
+      },
+      "pro": {
+        "title": "Pro (Monthly)",
+        "price": "$15/mo"
+      }
+    },
+    "yearly": {
+      "arcade": {
+        "title": "Arcade (Yearly)",
+        "price": "$90/yr"
+      },
+      "advanced": {
+        "title": "Advanced (Yearly)",
+        "price": "$120/yr"
+      },
+      "pro": {
+        "title": "Pro (Yearly)",
+        "price": "$150/yr"
+      }
+    },
+    "change": "Change",
+    "totalMonthly": "Total (per month)",
+    "totalYearly": "Total (per year)",
     "goBackLabel": "Go Back",
     "buttonLabel": "Next step"
   }

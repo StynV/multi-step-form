@@ -1,0 +1,96 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .summaryBlock {
+        background: var(--Very-Light-Grey, #F8F9FF);
+        border-radius: 8px;
+    
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+        .planSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid  var(--Grey, #9699AA);
+
+            .planDuration {    
+                .plan {
+                    color: var(--Denim, #022959);
+                    font-weight: 500;
+                    margin-bottom: 7px;
+                }
+
+                .change {
+                    font-size: 14px;
+                    color: var(--Grey, #9699AA);
+                    font-weight: 400;
+                    line-height: 20px; /* 142.857% */
+                    text-decoration-line: underline;
+                }
+            }
+
+            .price {
+                color: var(--Denim, #022959);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+        .totalTitle {
+            color: var(--Grey, #9699AA);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .totalPrice {
+            color: var(--Purple, #483EFF);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+
+     .buttons {
+        flex-grow: 1;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn {
+            border-radius: 8px;
+            background: var(--Denim, #022959);
+            width: fit-content;
+            padding: 14px 24px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btnSecondary {
+            background-color: white;
+            color: var(--Grey, #9699AA);
+            border: none;
+            width: fit-content;
+            font-family: 'Ubuntu';
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}

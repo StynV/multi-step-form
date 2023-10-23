@@ -6,9 +6,10 @@ import RadioButtons from './RadioButtons/RadioButtons'
 import styles from './plan.module.scss'
 import Toggle from './Toggle/Toggle'
 import { useRouter } from 'next/navigation'
+import { Duration, PlanEnum } from '@/state/models/Plan.model'
 
 const PlanForm = () => {
-    const [selectedPlan, setSelectedPlan] = useState('arcade')
+    const [selectedPlan, setSelectedPlan] = useState(PlanEnum.ARCADE)
     const [selectedDuration, setSelectedDuration] = useState(true)
     
     const { t } = useTranslation('common')
@@ -20,12 +21,12 @@ const PlanForm = () => {
     const onSubmit = (e: FormEvent) => {
         e.preventDefault()
 
-        const duration = selectedDuration === true ? 'monthly' : 'yearly'
+        const duration = selectedDuration === true ? Duration.MONTHLY : Duration.YEARLY
         dispatch(setPlan({ plan: selectedPlan, duration }))
         router.push('add-ons')
     }
 
-    const handleClick = (value: string) => {
+    const handleClick = (value: PlanEnum) => {
         setSelectedPlan(value)
     }
 

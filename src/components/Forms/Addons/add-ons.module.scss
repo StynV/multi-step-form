@@ -3,37 +3,6 @@
     flex-direction: column;
     gap: 1rem;
 
-    .option {
-        display: flex;
-        
-        border: 1px solid var(--Border-Color, #D6D9E6);
-        border-radius: 8px;
-
-        padding-top: 1.125rem;
-        padding-left: 1.5rem;
-        padding-bottom: 1.125rem;
-
-        cursor: pointer;
-
-        &.selected {
-            border: 1px solid var(--Purple, #483EFF);
-            background: var(--Very-Light-Grey, #F8F9FF);
-        }
-
-        .checkbox {
-            margin-right: 0.75rem;
-            accent-color: white;
-        }
-
-        .text {
-            flex-grow: 1;
-        }
-
-        .price {
-            margin-right: 1.5rem;
-        }
-    }
-
     .buttons {
         display: flex;
         flex-direction: row;
